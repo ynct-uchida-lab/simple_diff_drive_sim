@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.5.5 LTS commit date:2025-11-17, commit time:16:03, hash:836beaaf597a</authoring_tool>
+    </contributor>
+    <created>2025-11-28T16:31:13</created>
+    <modified>2025-11-28T16:31:13</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">39.59775</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <shiftx sid="shiftx" type="float">0</shiftx>
+          <shifty sid="shifty" type="float">0</shifty>
+          <dof_distance sid="dof_distance" type="float">10</dof_distance>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Light-light" name="Light">
+      <technique_common>
+        <point>
+          <color sid="color">1000 1000 1000</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <type sid="type" type="int">0</type>
+          <flag sid="flag" type="int">0</flag>
+          <mode sid="mode" type="int">2097153</mode>
+          <red sid="red" type="float">1</red>
+          <green sid="green" type="float">1</green>
+          <blue sid="blue" type="float">1</blue>
+          <energy sid="blender_energy" type="float">1000</energy>
+          <spotsize sid="spotsize" type="float">75</spotsize>
+          <spotblend sid="spotblend" type="float">0.15</spotblend>
+          <clipsta sid="clipsta" type="float">0.04999995</clipsta>
+          <clipend sid="clipend" type="float">40</clipend>
+          <radius sid="radius" type="float">0.1</radius>
+          <area_shape sid="area_shape" type="int">1</area_shape>
+          <area_size sid="area_size" type="float">0.1</area_size>
+          <area_sizey sid="area_sizey" type="float">0.1</area_sizey>
+          <area_sizez sid="area_sizez" type="float">1</area_sizez>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_effects>
+    <effect id="アルミニウム_-_サテン__1_-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">1 0 0 1</color>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">1</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Aluminum_-_Satin-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.9607843 0.9607843 0.9647059 1</color>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">1</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="アルミニウム_-_サテン__1___1_-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">1 0.5019608 0.5019608 1</color>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">1</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="アルミニウム_-_サテン__1_-material" name="アルミニウム - サテン (1)">
+      <instance_effect url="#アルミニウム_-_サテン__1_-effect"/>
+    </material>
+    <material id="Aluminum_-_Satin-material" name="Aluminum - Satin">
+      <instance_effect url="#Aluminum_-_Satin-effect"/>
+    </material>
+    <material id="アルミニウム_-_サテン__1___1_-material" name="アルミニウム - サテン (1) (1)">
+      <instance_effect url="#アルミニウム_-_サテン__1___1_-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Body11-mesh" name="Body11">
+      <mesh>
+        <source id="Body11-mesh-positions">
+          <float_array id="Body11-mesh-positions-array" count="42">37.5 45 0 47.5 45 0 47.5 45 0.00999999 37.5 45 0.00999999 42.5 45 0.004999995 37.5 55 0 37.5 55 0.00999999 37.5 50 0.004999995 47.5 55 0 47.5 55 0.00999999 42.5 55 0.004999995 47.5 50 0.004999995 42.5 50 0.00999999 42.5 50 0</float_array>
+          <technique_common>
+            <accessor source="#Body11-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body11-mesh-normals">
+          <float_array id="Body11-mesh-normals-array" count="18">0 -1 0 -1 0 0 0 1 0 1 0 0 0 0 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Body11-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body11-mesh-map-0">
+          <float_array id="Body11-mesh-map-0-array" count="144">0 0.00999999 0 0 5 0.004999995 5 0.004999995 0 0 10 0 5 0.004999995 10 0 10 0.00999999 10 0.00999999 0 0.00999999 5 0.004999995 0 0.00999999 0 0 5 0.004999995 5 0.004999995 0 0 10 0 5 0.004999995 10 0 10 0.00999999 10 0.00999999 0 0.00999999 5 0.004999995 0 0.00999999 0 0 5 0.004999995 5 0.004999995 0 0 10 0 5 0.004999995 10 0 10 0.00999999 10 0.00999999 0 0.00999999 5 0.004999995 0 0.00999999 0 0 5 0.004999995 5 0.004999995 0 0 10 0 5 0.004999995 10 0 10 0.00999999 10 0.00999999 0 0.00999999 5 0.004999995 -5 -5 5 -5 0 0 0 0 5 -5 5 5 0 0 5 5 -5 5 -5 5 -5 -5 0 0 5 5 -5 5 0 0 0 0 -5 5 -5 -5 0 0 -5 -5 5 -5 5 -5 5 5 0 0</float_array>
+          <technique_common>
+            <accessor source="#Body11-mesh-map-0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Body11-mesh-vertices">
+          <input semantic="POSITION" source="#Body11-mesh-positions"/>
+        </vertices>
+        <triangles material="アルミニウム_-_サテン__1_-material" count="24">
+          <input semantic="VERTEX" source="#Body11-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Body11-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Body11-mesh-map-0" offset="2" set="0"/>
+          <p>3 0 0 0 0 1 4 0 2 4 0 3 0 0 4 1 0 5 4 0 6 1 0 7 2 0 8 2 0 9 3 0 10 4 0 11 6 1 12 5 1 13 7 1 14 7 1 15 5 1 16 0 1 17 7 1 18 0 1 19 3 1 20 3 1 21 6 1 22 7 1 23 9 2 24 8 2 25 10 2 26 10 2 27 8 2 28 5 2 29 10 2 30 5 2 31 6 2 32 6 2 33 9 2 34 10 2 35 2 3 36 1 3 37 11 3 38 11 3 39 1 3 40 8 3 41 11 3 42 8 3 43 9 3 44 9 3 45 2 3 46 11 3 47 3 4 48 2 4 49 12 4 50 12 4 51 2 4 52 9 4 53 12 4 54 9 4 55 6 4 56 6 4 57 3 4 58 12 4 59 5 5 60 8 5 61 13 5 62 13 5 63 8 5 64 1 5 65 13 5 66 1 5 67 0 5 68 0 5 69 5 5 70 13 5 71</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Body10-mesh" name="Body10">
+      <mesh>
+        <source id="Body10-mesh-positions">
+          <float_array id="Body10-mesh-positions-array" count="42">-5 5 0 -5 -5 0 -5 -5 0.00999999 -5 5 0.00999999 -5 0 0.004999995 5 5 0 5 5 0.00999999 0 5 0.004999995 5 -5 0 5 -5 0.00999999 5 0 0.004999995 0 -5 0.004999995 0 0 0.00999999 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#Body10-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body10-mesh-normals">
+          <float_array id="Body10-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Body10-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body10-mesh-map-0">
+          <float_array id="Body10-mesh-map-0-array" count="144">0 0.00999999 0 0 5 0.004999995 5 0.004999995 0 0 10 0 5 0.004999995 10 0 10 0.00999999 10 0.00999999 0 0.00999999 5 0.004999995 0 0.00999999 0 0 5 0.004999995 5 0.004999995 0 0 10 0 5 0.004999995 10 0 10 0.00999999 10 0.00999999 0 0.00999999 5 0.004999995 0 0.00999999 0 0 5 0.004999995 5 0.004999995 0 0 10 0 5 0.004999995 10 0 10 0.00999999 10 0.00999999 0 0.00999999 5 0.004999995 0 0.00999999 0 0 5 0.004999995 5 0.004999995 0 0 10 0 5 0.004999995 10 0 10 0.00999999 10 0.00999999 0 0.00999999 5 0.004999995 -5 5 -5 -5 0 0 0 0 -5 -5 5 -5 0 0 5 -5 5 5 5 5 -5 5 0 0 -5 5 -5 -5 0 0 0 0 -5 -5 5 -5 0 0 5 -5 5 5 5 5 -5 5 0 0</float_array>
+          <technique_common>
+            <accessor source="#Body10-mesh-map-0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Body10-mesh-vertices">
+          <input semantic="POSITION" source="#Body10-mesh-positions"/>
+        </vertices>
+        <triangles material="アルミニウム_-_サテン__1_-material" count="24">
+          <input semantic="VERTEX" source="#Body10-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Body10-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Body10-mesh-map-0" offset="2" set="0"/>
+          <p>3 0 0 0 0 1 4 0 2 4 0 3 0 0 4 1 0 5 4 0 6 1 0 7 2 0 8 2 0 9 3 0 10 4 0 11 6 1 12 5 1 13 7 1 14 7 1 15 5 1 16 0 1 17 7 1 18 0 1 19 3 1 20 3 1 21 6 1 22 7 1 23 9 2 24 8 2 25 10 2 26 10 2 27 8 2 28 5 2 29 10 2 30 5 2 31 6 2 32 6 2 33 9 2 34 10 2 35 2 3 36 1 3 37 11 3 38 11 3 39 1 3 40 8 3 41 11 3 42 8 3 43 9 3 44 9 3 45 2 3 46 11 3 47 3 4 48 2 4 49 12 4 50 12 4 51 2 4 52 9 4 53 12 4 54 9 4 55 6 4 56 6 4 57 3 4 58 12 4 59 5 5 60 8 5 61 13 5 62 13 5 63 8 5 64 1 5 65 13 5 66 1 5 67 0 5 68 0 5 69 5 5 70 13 5 71</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Body17-mesh" name="Body17">
+      <mesh>
+        <source id="Body17-mesh-positions">
+          <float_array id="Body17-mesh-positions-array" count="261">37.5 7.5 0 -5 7.5 0 -5 7.5 5 37.5 7.5 5 16.25 7.5 2.5 37.5 5 0 37.5 5 5 37.5 6.25 2.5 -5 5 0 -5 5 5 16.25 5 2.5 -5 -5 5 -5 -5 0 -5 0 2.5 -5 30 0 -5 30 5 -5 18.75 2.5 5 17.5 0 47.5 17.5 0 47.5 17.5 5 5 17.5 5 26.25 17.5 2.5 5 20 0 5 20 5 5 18.75 2.5 47.5 20 0 47.5 20 5 26.25 20 2.5 47.5 42.5 5 47.5 42.5 0 47.5 31.25 2.5 47.5 -5 0 47.5 -5 5 47.5 6.25 2.5 37.5 32.5 0 -5 32.5 0 -5 32.5 5 37.5 32.5 5 16.25 32.5 2.5 37.5 30 0 37.5 30 5 37.5 31.25 2.5 16.25 30 2.5 -5 42.5 0 -5 42.5 5 -5 37.5 2.5 16.25 45 0 -5 45 0 -5 45 5 16.25 45 5 5.625 45 2.5 16.25 42.5 0 16.25 42.5 5 16.25 43.75 2.5 5.625 42.5 2.5 -5 55 0 -5 55 5 -5 50 2.5 47.5 45 0 47.5 45 5 47.5 55 5 47.5 55 0 47.5 50 2.5 21.25 55 2.5 21.25 -5 2.5 50 57.5 0 -7.5 57.5 0 -7.5 57.5 5 50 57.5 5 21.25 57.5 2.5 50 -7.5 0 50 -7.5 5 50 25 2.5 -7.5 -7.5 0 -7.5 -7.5 5 21.25 -7.5 2.5 -7.5 25 2.5 26.25 42.5 0 26.25 42.5 5 36.875 42.5 2.5 26.25 45 0 26.25 45 5 26.25 43.75 2.5 36.875 45 2.5 21.25 30.95588 5 21.25 5.955883 5 21.25 18.45588 0</float_array>
+          <technique_common>
+            <accessor source="#Body17-mesh-positions-array" count="87" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body17-mesh-normals">
+          <float_array id="Body17-mesh-normals-array" count="18">0 1 0 1 0 0 0 -1 0 -1 0 0 0 0 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Body17-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body17-mesh-map-0">
+          <float_array id="Body17-mesh-map-0-array" count="1044">0 5 0 0 21.25 2.5 21.25 2.5 0 0 42.5 0 21.25 2.5 42.5 0 42.5 5 42.5 5 0 5 21.25 2.5 0 5 0 0 1.25 2.5 1.25 2.5 0 0 2.5 0 1.25 2.5 2.5 0 2.5 5 2.5 5 0 5 1.25 2.5 0 5 0 0 21.25 2.5 21.25 2.5 0 0 42.5 0 21.25 2.5 42.5 0 42.5 5 42.5 5 0 5 21.25 2.5 0 0 10 0 5 2.5 5 2.5 10 0 10 5 5 2.5 10 5 0 5 0 5 0 0 5 2.5 35 5 12.5 5 23.75 2.5 23.75 2.5 12.5 5 12.5 0 23.75 2.5 12.5 0 35 0 35 0 35 5 23.75 2.5 0 5 0 0 21.25 2.5 21.25 2.5 0 0 42.5 0 21.25 2.5 42.5 0 42.5 5 42.5 5 0 5 21.25 2.5 0 5 0 0 1.25 2.5 1.25 2.5 0 0 2.5 0 1.25 2.5 2.5 0 2.5 5 2.5 5 0 5 1.25 2.5 0 5 0 0 21.25 2.5 21.25 2.5 0 0 42.5 0 21.25 2.5 42.5 0 42.5 5 42.5 5 0 5 21.25 2.5 12.5 0 35 0 23.75 2.5 23.75 2.5 35 0 35 5 23.75 2.5 35 5 12.5 5 12.5 5 12.5 0 23.75 2.5 60 5 37.5 5 48.75 2.5 48.75 2.5 37.5 5 37.5 0 48.75 2.5 37.5 0 60 0 60 0 60 5 48.75 2.5 0 5 0 0 21.25 2.5 21.25 2.5 0 0 42.5 0 21.25 2.5 42.5 0 42.5 5 42.5 5 0 5 21.25 2.5 0 5 0 0 1.25 2.5 1.25 2.5 0 0 2.5 0 1.25 2.5 2.5 0 2.5 5 2.5 5 0 5 1.25 2.5 0 5 0 0 21.25 2.5 21.25 2.5 0 0 42.5 0 21.25 2.5 42.5 0 42.5 5 42.5 5 0 5 21.25 2.5 47.5 5 37.5 5 42.5 2.5 42.5 2.5 37.5 5 37.5 0 42.5 2.5 37.5 0 47.5 0 47.5 0 47.5 5 42.5 2.5 0 5 0 0 10.625 2.5 10.625 2.5 0 0 21.25 0 10.625 2.5 21.25 0 21.25 5 21.25 5 0 5 10.625 2.5 0 5 0 0 1.25 2.5 1.25 2.5 0 0 2.5 0 1.25 2.5 2.5 0 2.5 5 2.5 5 0 5 1.25 2.5 0 5 0 0 10.625 2.5 10.625 2.5 0 0 21.25 0 10.625 2.5 21.25 0 21.25 5 21.25 5 0 5 10.625 2.5 60 5 50 5 55 2.5 55 2.5 50 5 50 0 55 2.5 50 0 60 0 60 0 60 5 55 2.5 0 0 10 0 5 2.5 5 2.5 10 0 10 5 5 2.5 10 5 0 5 0 5 0 0 5 2.5 0 5 0 0 26.25 2.5 26.25 2.5 0 0 52.5 0 26.25 2.5 52.5 0 52.5 5 52.5 5 0 5 26.25 2.5 0 5 0 0 26.25 2.5 26.25 2.5 0 0 52.5 0 26.25 2.5 52.5 0 52.5 5 52.5 5 0 5 26.25 2.5 0 5 0 0 28.75 2.5 28.75 2.5 0 0 57.5 0 28.75 2.5 57.5 0 57.5 5 57.5 5 0 5 28.75 2.5 0 5 0 0 32.5 2.5 32.5 2.5 0 0 65 0 32.5 2.5 65 0 65 5 65 5 0 5 32.5 2.5 0 5 0 0 28.75 2.5 28.75 2.5 0 0 57.5 0 28.75 2.5 57.5 0 57.5 5 57.5 5 0 5 28.75 2.5 0 5 0 0 32.5 2.5 32.5 2.5 0 0 65 0 32.5 2.5 65 0 65 5 65 5 0 5 32.5 2.5 0 5 0 0 10.625 2.5 10.625 2.5 0 0 21.25 0 10.625 2.5 21.25 0 21.25 5 21.25 5 0 5 10.625 2.5 0 5 0 0 1.25 2.5 1.25 2.5 0 0 2.5 0 1.25 2.5 2.5 0 2.5 5 2.5 5 0 5 1.25 2.5 0 5 0 0 10.625 2.5 10.625 2.5 0 0 21.25 0 10.625 2.5 21.25 0 21.25 5 21.25 5 0 5 10.625 2.5 -44.375 -51.25 -41.875 -13.75 -44.375 13.75 -44.375 13.75 -41.875 -13.75 -41.875 -11.25 -44.375 13.75 -41.875 -11.25 -41.875 -1.25 13.125 -51.25 -41.875 -48.75 -44.375 -51.25 -44.375 -51.25 -41.875 -48.75 -41.875 -38.75 -44.375 -51.25 -41.875 -38.75 -41.875 -36.25 -41.875 -36.25 -41.875 -38.75 -15.625 -37.79412 -41.875 -36.25 -15.625 -37.79412 0.625 -36.25 0.625 -36.25 -15.625 -37.79412 0.625 -38.75 0.625 -38.75 -15.625 -37.79412 -41.875 -38.75 13.125 13.75 10.625 -23.75 13.125 -51.25 13.125 -51.25 10.625 -23.75 10.625 -26.25 13.125 -51.25 10.625 -26.25 10.625 -48.75 -44.375 13.75 10.625 11.25 13.125 13.75 13.125 13.75 10.625 11.25 10.625 1.25 13.125 13.75 10.625 1.25 10.625 -1.25 10.625 -1.25 10.625 1.25 -10.625 1.25 10.625 -1.25 -10.625 1.25 -10.625 -1.25 10.625 -1.25 10.625 -23.75 13.125 13.75 10.625 -23.75 -31.875 -23.75 10.625 -26.25 10.625 -26.25 -31.875 -23.75 -31.875 -26.25 10.625 -48.75 -41.875 -48.75 13.125 -51.25 -41.875 -36.25 -41.875 -13.75 -44.375 -51.25 -41.875 -11.25 -41.875 -13.75 -15.625 -12.79412 -15.625 -12.79412 -41.875 -13.75 0.625 -13.75 -15.625 -12.79412 0.625 -13.75 0.625 -11.25 0.625 -11.25 -41.875 -11.25 -15.625 -12.79412 -44.375 13.75 -41.875 -1.25 -41.875 1.25 -41.875 1.25 -41.875 -1.25 -20.625 -1.25 -41.875 1.25 -20.625 -1.25 -20.625 1.25 -41.875 1.25 -41.875 11.25 -44.375 13.75 -44.375 13.75 -41.875 11.25 10.625 11.25 44.375 13.75 41.875 -13.75 44.375 -51.25 44.375 -51.25 41.875 -13.75 41.875 -36.25 44.375 -51.25 41.875 -36.25 41.875 -38.75 41.875 -38.75 41.875 -36.25 -0.625 -36.25 41.875 -38.75 -0.625 -36.25 -0.625 -38.75 -13.125 13.75 41.875 11.25 44.375 13.75 44.375 13.75 41.875 11.25 41.875 1.25 44.375 13.75 41.875 1.25 41.875 -1.25 41.875 -1.25 41.875 1.25 20.625 1.25 41.875 -1.25 20.625 1.25 20.625 -1.25 -13.125 -51.25 -10.625 -23.75 -13.125 13.75 -13.125 13.75 -10.625 -23.75 -10.625 -1.25 -13.125 13.75 -10.625 -1.25 -10.625 1.25 -10.625 1.25 -10.625 -1.25 10.625 -1.25 -10.625 1.25 10.625 -1.25 10.625 1.25 44.375 -51.25 -10.625 -48.75 -13.125 -51.25 -13.125 -51.25 -10.625 -48.75 -10.625 -26.25 -13.125 -51.25 -10.625 -26.25 -10.625 -23.75 -10.625 -23.75 -10.625 -26.25 15.625 -25.29412 -10.625 -23.75 15.625 -25.29412 31.875 -23.75 31.875 -23.75 15.625 -25.29412 31.875 -26.25 31.875 -26.25 15.625 -25.29412 -10.625 -26.25 -10.625 1.25 -10.625 11.25 -13.125 13.75 -13.125 13.75 -10.625 11.25 41.875 11.25 41.875 -1.25 41.875 -11.25 44.375 13.75 44.375 13.75 41.875 -11.25 41.875 -13.75 41.875 -11.25 -0.625 -11.25 41.875 -13.75 41.875 -13.75 -0.625 -11.25 -0.625 -13.75 41.875 -38.75 41.875 -48.75 44.375 -51.25 44.375 -51.25 41.875 -48.75 -10.625 -48.75</float_array>
+          <technique_common>
+            <accessor source="#Body17-mesh-map-0-array" count="522" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Body17-mesh-vertices">
+          <input semantic="POSITION" source="#Body17-mesh-positions"/>
+        </vertices>
+        <triangles material="アルミニウム_-_サテン__1_-material" count="174">
+          <input semantic="VERTEX" source="#Body17-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Body17-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Body17-mesh-map-0" offset="2" set="0"/>
+          <p>3 0 0 0 0 1 4 0 2 4 0 3 0 0 4 1 0 5 4 0 6 1 0 7 2 0 8 2 0 9 3 0 10 4 0 11 6 1 12 5 1 13 7 1 14 7 1 15 5 1 16 0 1 17 7 1 18 0 1 19 3 1 20 3 1 21 6 1 22 7 1 23 9 2 24 8 2 25 10 2 26 10 2 27 8 2 28 5 2 29 10 2 30 5 2 31 6 2 32 6 2 33 9 2 34 10 2 35 12 1 36 8 1 37 13 1 38 13 1 39 8 1 40 9 1 41 13 1 42 9 1 43 11 1 44 11 1 45 12 1 46 13 1 47 15 1 48 2 1 49 16 1 50 16 1 51 2 1 52 1 1 53 16 1 54 1 1 55 14 1 56 14 1 57 15 1 58 16 1 59 20 2 60 17 2 61 21 2 62 21 2 63 17 2 64 18 2 65 21 2 66 18 2 67 19 2 68 19 2 69 20 2 70 21 2 71 23 3 72 22 3 73 24 3 74 24 3 75 22 3 76 17 3 77 24 3 78 17 3 79 20 3 80 20 3 81 23 3 82 24 3 83 26 0 84 25 0 85 27 0 86 27 0 87 25 0 88 22 0 89 27 0 90 22 0 91 23 0 92 23 0 93 26 0 94 27 0 95 29 3 96 25 3 97 30 3 98 30 3 99 25 3 100 26 3 101 30 3 102 26 3 103 28 3 104 28 3 105 29 3 106 30 3 107 32 3 108 19 3 109 33 3 110 33 3 111 19 3 112 18 3 113 33 3 114 18 3 115 31 3 116 31 3 117 32 3 118 33 3 119 37 0 120 34 0 121 38 0 122 38 0 123 34 0 124 35 0 125 38 0 126 35 0 127 36 0 128 36 0 129 37 0 130 38 0 131 40 1 132 39 1 133 41 1 134 41 1 135 39 1 136 34 1 137 41 1 138 34 1 139 37 1 140 37 1 141 40 1 142 41 1 143 15 2 144 14 2 145 42 2 146 42 2 147 14 2 148 39 2 149 42 2 150 39 2 151 40 2 152 40 2 153 15 2 154 42 2 155 44 1 156 36 1 157 45 1 158 45 1 159 36 1 160 35 1 161 45 1 162 35 1 163 43 1 164 43 1 165 44 1 166 45 1 167 49 0 168 46 0 169 50 0 170 50 0 171 46 0 172 47 0 173 50 0 174 47 0 175 48 0 176 48 0 177 49 0 178 50 0 179 52 1 180 51 1 181 53 1 182 53 1 183 51 1 184 46 1 185 53 1 186 46 1 187 49 1 188 49 1 189 52 1 190 53 1 191 44 2 192 43 2 193 54 2 194 54 2 195 43 2 196 51 2 197 54 2 198 51 2 199 52 2 200 52 2 201 44 2 202 54 2 203 56 1 204 48 1 205 57 1 206 57 1 207 48 1 208 47 1 209 57 1 210 47 1 211 55 1 212 55 1 213 56 1 214 57 1 215 61 3 216 58 3 217 62 3 218 62 3 219 58 3 220 59 3 221 62 3 222 59 3 223 60 3 224 60 3 225 61 3 226 62 3 227 56 2 228 55 2 229 63 2 230 63 2 231 55 2 232 61 2 233 63 2 234 61 2 235 60 2 236 60 2 237 56 2 238 63 2 239 32 0 240 31 0 241 64 0 242 64 0 243 31 0 244 12 0 245 64 0 246 12 0 247 11 0 248 11 0 249 32 0 250 64 0 251 68 0 252 65 0 253 69 0 254 69 0 255 65 0 256 66 0 257 69 0 258 66 0 259 67 0 260 67 0 261 68 0 262 69 0 263 71 1 264 70 1 265 72 1 266 72 1 267 70 1 268 65 1 269 72 1 270 65 1 271 68 1 272 68 1 273 71 1 274 72 1 275 74 2 276 73 2 277 75 2 278 75 2 279 73 2 280 70 2 281 75 2 282 70 2 283 71 2 284 71 2 285 74 2 286 75 2 287 67 3 288 66 3 289 76 3 290 76 3 291 66 3 292 73 3 293 76 3 294 73 3 295 74 3 296 74 3 297 67 3 298 76 3 299 78 2 300 77 2 301 79 2 302 79 2 303 77 2 304 29 2 305 79 2 306 29 2 307 28 2 308 28 2 309 78 2 310 79 2 311 81 3 312 80 3 313 82 3 314 82 3 315 80 3 316 77 3 317 82 3 318 77 3 319 78 3 320 78 3 321 81 3 322 82 3 323 59 0 324 58 0 325 83 0 326 83 0 327 58 0 328 80 0 329 83 0 330 80 0 331 81 0 332 81 0 333 59 0 334 83 0 335 74 4 336 15 4 337 67 4 338 67 4 339 15 4 340 36 4 341 67 4 342 36 4 343 44 4 344 71 4 345 11 4 346 74 4 347 74 4 348 11 4 349 9 4 350 74 4 351 9 4 352 2 4 353 2 4 354 9 4 355 85 4 356 2 4 357 85 4 358 3 4 359 3 4 360 85 4 361 6 4 362 6 4 363 85 4 364 9 4 365 68 4 366 26 4 367 71 4 368 71 4 369 26 4 370 19 4 371 71 4 372 19 4 373 32 4 374 67 4 375 60 4 376 68 4 377 68 4 378 60 4 379 59 4 380 68 4 381 59 4 382 28 4 383 28 4 384 59 4 385 81 4 386 28 4 387 81 4 388 78 4 389 28 4 390 26 4 391 68 4 392 26 4 393 23 4 394 19 4 395 19 4 396 23 4 397 20 4 398 32 4 399 11 4 400 71 4 401 2 4 402 15 4 403 74 4 404 36 4 405 15 4 406 84 4 407 84 4 408 15 4 409 40 4 410 84 4 411 40 4 412 37 4 413 37 4 414 36 4 415 84 4 416 67 4 417 44 4 418 48 4 419 48 4 420 44 4 421 52 4 422 48 4 423 52 4 424 49 4 425 48 4 426 56 4 427 67 4 428 67 4 429 56 4 430 60 4 431 66 5 432 14 5 433 73 5 434 73 5 435 14 5 436 1 5 437 73 5 438 1 5 439 8 5 440 8 5 441 1 5 442 0 5 443 8 5 444 0 5 445 5 5 446 65 5 447 55 5 448 66 5 449 66 5 450 55 5 451 47 5 452 66 5 453 47 5 454 43 5 455 43 5 456 47 5 457 46 5 458 43 5 459 46 5 460 51 5 461 70 5 462 25 5 463 65 5 464 65 5 465 25 5 466 29 5 467 65 5 468 29 5 469 58 5 470 58 5 471 29 5 472 77 5 473 58 5 474 77 5 475 80 5 476 73 5 477 31 5 478 70 5 479 70 5 480 31 5 481 18 5 482 70 5 483 18 5 484 25 5 485 25 5 486 18 5 487 86 5 488 25 5 489 86 5 490 22 5 491 22 5 492 86 5 493 17 5 494 17 5 495 86 5 496 18 5 497 58 5 498 61 5 499 65 5 500 65 5 501 61 5 502 55 5 503 43 5 504 35 5 505 66 5 506 66 5 507 35 5 508 14 5 509 35 5 510 34 5 511 14 5 512 14 5 513 34 5 514 39 5 515 8 5 516 12 5 517 73 5 518 73 5 519 12 5 520 31 5 521</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Body9-mesh" name="Body9">
+      <mesh>
+        <source id="Body9-mesh-positions">
+          <float_array id="Body9-mesh-positions-array" count="42">50 -7.5 0 -7.5 -7.5 0 -7.5 -7.5 -1 50 -7.5 -1 21.25 -7.5 -0.5 50 57.5 0 50 57.5 -1 50 25 -0.5 -7.5 57.5 0 -7.5 57.5 -1 21.25 57.5 -0.5 -7.5 25 -0.5 21.25 25 0 21.25 25 -1</float_array>
+          <technique_common>
+            <accessor source="#Body9-mesh-positions-array" count="14" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body9-mesh-normals">
+          <float_array id="Body9-mesh-normals-array" count="18">0 -1 0 1 0 0 0 1 0 -1 0 0 0 0 1 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#Body9-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Body9-mesh-map-0">
+          <float_array id="Body9-mesh-map-0-array" count="144">0 1 0 0 28.75 0.5 28.75 0.5 0 0 57.5 0 28.75 0.5 57.5 0 57.5 1 57.5 1 0 1 28.75 0.5 0 1 0 0 32.5 0.5 32.5 0.5 0 0 65 0 32.5 0.5 65 0 65 1 65 1 0 1 32.5 0.5 0 1 0 0 28.75 0.5 28.75 0.5 0 0 57.5 0 28.75 0.5 57.5 0 57.5 1 57.5 1 0 1 28.75 0.5 0 1 0 0 32.5 0.5 32.5 0.5 0 0 65 0 32.5 0.5 65 0 65 1 65 1 0 1 32.5 0.5 28.75 32.5 -28.75 32.5 0 0 0 0 -28.75 32.5 -28.75 -32.5 0 0 -28.75 -32.5 28.75 -32.5 28.75 -32.5 28.75 32.5 0 0 -28.75 -32.5 28.75 -32.5 0 0 0 0 28.75 -32.5 28.75 32.5 0 0 28.75 32.5 -28.75 32.5 -28.75 32.5 -28.75 -32.5 0 0</float_array>
+          <technique_common>
+            <accessor source="#Body9-mesh-map-0-array" count="72" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Body9-mesh-vertices">
+          <input semantic="POSITION" source="#Body9-mesh-positions"/>
+        </vertices>
+        <triangles material="アルミニウム_-_サテン__1___1_-material" count="24">
+          <input semantic="VERTEX" source="#Body9-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Body9-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Body9-mesh-map-0" offset="2" set="0"/>
+          <p>3 0 0 0 0 1 4 0 2 4 0 3 0 0 4 1 0 5 4 0 6 1 0 7 2 0 8 2 0 9 3 0 10 4 0 11 6 1 12 5 1 13 7 1 14 7 1 15 5 1 16 0 1 17 7 1 18 0 1 19 3 1 20 3 1 21 6 1 22 7 1 23 9 2 24 8 2 25 10 2 26 10 2 27 8 2 28 5 2 29 10 2 30 5 2 31 6 2 32 6 2 33 9 2 34 10 2 35 2 3 36 1 3 37 11 3 38 11 3 39 1 3 40 8 3 41 11 3 42 8 3 43 9 3 44 9 3 45 2 3 46 11 3 47 5 4 48 8 4 49 12 4 50 12 4 51 8 4 52 1 4 53 12 4 54 1 4 55 0 4 56 0 4 57 5 4 58 12 4 59 3 5 60 2 5 61 13 5 62 13 5 63 2 5 64 9 5 65 13 5 66 9 5 67 6 5 68 6 5 69 3 5 70 13 5 71</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="field_1_v2" name="field_1 v2" type="NODE">
+        <matrix sid="transform">0.005 0 0 0 0 0.005 0 0 0 0 0.005 0 0 0 0 1</matrix>
+        <node id="Body9" name="Body9" type="NODE">
+          <matrix sid="transform">9.999999 0 0 0 0 9.999999 0 0 0 0 9.999999 0 0 0 0 1</matrix>
+          <instance_geometry url="#Body9-mesh" name="Body9">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="アルミニウム_-_サテン__1___1_-material" target="#アルミニウム_-_サテン__1___1_-material">
+                  <bind_vertex_input semantic="Texture UVs" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="Body17" name="Body17" type="NODE">
+          <matrix sid="transform">9.999999 0 0 0 0 9.999999 0 0 0 0 9.999999 0 0 0 0 1</matrix>
+          <instance_geometry url="#Body17-mesh" name="Body17">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="アルミニウム_-_サテン__1_-material" target="#アルミニウム_-_サテン__1_-material">
+                  <bind_vertex_input semantic="Texture UVs" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="Body10" name="Body10" type="NODE">
+          <matrix sid="transform">9.999999 0 0 0 0 9.999999 0 0 0 0 9.999999 0 0 0 0 1</matrix>
+          <instance_geometry url="#Body10-mesh" name="Body10">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="アルミニウム_-_サテン__1_-material" target="#アルミニウム_-_サテン__1_-material">
+                  <bind_vertex_input semantic="Texture UVs" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="Aluminum_-_Satin-material" target="#Aluminum_-_Satin-material">
+                  <bind_vertex_input semantic="Texture UVs" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+        <node id="Body11" name="Body11" type="NODE">
+          <matrix sid="transform">9.999999 0 0 0 0 9.999999 0 0 0 0 9.999999 0 0 0 0 1</matrix>
+          <instance_geometry url="#Body11-mesh" name="Body11">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="アルミニウム_-_サテン__1_-material" target="#アルミニウム_-_サテン__1_-material">
+                  <bind_vertex_input semantic="Texture UVs" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+                <instance_material symbol="Aluminum_-_Satin-material" target="#Aluminum_-_Satin-material">
+                  <bind_vertex_input semantic="Texture UVs" input_semantic="TEXCOORD" input_set="0"/>
+                </instance_material>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6859207 -0.3240135 0.6515582 7.358891 0.7276763 0.3054208 -0.6141704 -6.925791 0 0.8953956 0.4452714 4.958309 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Light" name="Light" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
+        <instance_light url="#Light-light"/>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
