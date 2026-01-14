@@ -21,7 +21,7 @@ def collect_nested_files(*directories):
     return collected
 
 
-data_files.extend(collect_nested_files('launch', 'urdf', 'worlds'))
+data_files.extend(collect_nested_files('launch', 'urdf', 'worlds', 'models'))
 
 
 setup(
@@ -42,7 +42,10 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'simple_diff_drive = simple_diff_drive_sim.simple_diff_drive:main'
+            'simple_diff_drive = simple_diff_drive_sim.simple_diff_drive:main',
+            'patch_depot_collision = simple_diff_drive_sim.patch_depot_collision:main',
+            'random_walk_obstacle = simple_diff_drive_sim.random_walk_obstacle:main',
+            'navigation_test = simple_diff_drive_sim.navigation_test:main',
         ],
     },
 )
